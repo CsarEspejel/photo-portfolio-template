@@ -3,6 +3,8 @@ body{
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
+
+// Header
 header{
     height: 100vh;
     background: url('img/background.jpg') no-repeat center center/cover;
@@ -16,6 +18,7 @@ header{
         right: 0;
         background: rgba(0, 0, 0, 0.4);
     }
+    // Navigation Bar
     nav{
         position: relative;
         display: flex;
@@ -31,9 +34,9 @@ header{
             align-items: center;
         }
         .brand{
-            width: 25%;
+            width: 40%;
             font-size: 14px;
-            min-width: 20%;
+            min-width: 300px;
             color: #f2f2f2;
             display: flex;
             flex-flow: row;
@@ -57,7 +60,8 @@ header{
             }
         }
         .menu{
-            width: 50%;
+            width: 60%;
+            min-width: 575px;
             ul{
                 display: flex;
                 flex-flow: row;
@@ -88,20 +92,23 @@ header{
                 }
             }
         }
-        .contact{
-            width: 25%;
-            font-size: 17px;
-            display: flex;
-            justify-content: center;
-        }
+        // .contact{
+        //     width: 25%;
+        //     min-width: 280px;
+        //     font-size: 17px;
+        //     display: flex;
+        //     justify-content: center;
+        // }
     }
-
+    
+    // Showcase information
     .showcase{
         display: flex;
         flex-flow: row;
         position: relative;
         top: 100px;
         width: 40%;
+        min-width: 510px;
         .social-networks{
             display: flex;
             flex-flow: column;
@@ -165,3 +172,6 @@ header{
         }
     }
 }
+// End header
+
+// Section services
