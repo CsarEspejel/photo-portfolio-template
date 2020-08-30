@@ -167,6 +167,11 @@ header{
                     align-items: center;
                     border: 1px solid #fff;
                     margin-top: 35px;
+                    transition: background-color .5s ease, color .5s ease;
+                    &:hover{
+                        background: #f9f9f9;
+                        color: #000;
+                    }
                 }
             }
         }
@@ -175,3 +180,42 @@ header{
 // End header
 
 // Section services
+.services{
+    margin: 60px 0 100px 0;
+    padding: 0 180px;
+    display: flex;
+    flex-flow: column;
+    .title-services{
+        font-size: 20px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.8);
+    }
+    .card-services{
+        display: flex;
+        flex-flow: row;
+        margin-top: 40px;
+        justify-content: space-between;
+        .card-content{
+            margin: 0 10px;
+            i{
+                color: rgba(0, 0, 0, 0.4);
+                // padding: 20px 0;
+            }
+            .card-text{
+                h5{
+                    margin: 25px 0;
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: rgba(0, 0, 0, 0.8);
+                }
+                p{
+                    margin: 0;
+                    color: rgba(0, 0, 0, 0.8);
+                    font-size: 13px;
+                    font-weight: 500;
+                    width: 180px;
+                }
+            }
+        }
+    }
+}
